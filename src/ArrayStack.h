@@ -19,6 +19,9 @@ public:
   T top();
 };
 
-// #include "ArrayStack.cpp"
-void init_class();
+// #include "ArrayStack.cpp"/*
+//                           fix template class problem
+//                           修正範本物件在分離實作會無法找到類別的問題
+//                           另有解法
+//                         */
 #endif

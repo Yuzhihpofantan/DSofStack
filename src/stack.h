@@ -9,7 +9,9 @@ protected:
   int size_cnt;
 public:
   stack(){
+
     size_cnt=0;
+    
   }
   stack(T &t){
     size_cnt=t;

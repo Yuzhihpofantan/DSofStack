@@ -1,14 +1,24 @@
 #include <iostream>
 #include "ArrayStack.h"
 // #include "stack.h"
-using namespace std;
+
 
 int main() {
     int var=20;
     int *ptr =&var;
-    ArrayStack<int> a(20);
-
-    std::cout << a.size() << '\n';
-
+    ArrayStack<int> *a=new ArrayStack<int>(2);
+    int b=2;
+    int c=3;
+    a->push(c);
+    std::cout << "before push "<< a->top() << '\n';
+    a->push(b);
+    std::cout << "after  push "<< a->top() << '\n';
+    a->pop();
+    std::cout << "after  pop "<< a->top() << '\n';
+    a->pop();
+    std::cout << "after  secondpop "<< a->top() << '\n';
+    a->pop();
+    std::cout << "after  thirdpop "<< a->top() << '\n';
+    delete a;
     return 0;
 }
