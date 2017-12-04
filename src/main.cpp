@@ -13,12 +13,12 @@ int main() {
     std::cout << "before push "<< a->top() << '\n';
     a->push(b);
     std::cout << "after  push "<< a->top() << '\n';
-    a->pop();
-    std::cout << "after  pop "<< a->top() << '\n';
-    a->pop();
-    std::cout << "after  secondpop "<< a->top() << '\n';
-    a->pop();
-    std::cout << "after  thirdpop "<< a->top() << '\n';
+    while(!(a->StackIsempty())){
+      std::cout << "after  pop "<< a->pop() << '\n';
+    }
+    std::cout << "Stack is empty "<< '\n';
+
+
     delete a;
     return 0;
 }

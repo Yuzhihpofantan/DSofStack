@@ -14,6 +14,7 @@ public:
   ArrayStack();
   ArrayStack(int size);
   ~ArrayStack();
+  bool StackIsempty();
   void push(T&);
   T pop();
   T top();

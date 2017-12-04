@@ -47,14 +47,20 @@ T ArrayStack<T>::top(){
 
 template <class T>
 T ArrayStack<T>::pop(){
-  if(stack<T>::size_cnt>1){
+
 
 
     return array[--stack<T>::size_cnt];
-  }
-  else{
-    std::cout << "Stack is empty" << '\n';
-    return array[0];
-  }
+  
+
 
 }
+template <class T>
+bool ArrayStack<T>::StackIsempty(){
+  if(stack<T>::size_cnt==0)
+    return true;
+  else
+    return false;
+}
+
+template class ArrayStack<int>;
